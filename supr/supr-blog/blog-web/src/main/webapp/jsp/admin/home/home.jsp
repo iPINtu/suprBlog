@@ -14,7 +14,10 @@
 
 	<div data-options="region:'north',title:'North Title',split:true,collapsed:true" style="height:100px;"></div>
     <div data-options="region:'south',title:'South Title',split:true,collapsed:true" style="height:100px;"></div>
+    
+    <!-- 
     <div data-options="region:'east',title:'East',split:true,collapsed:true" style="width:100px;"></div>
+     -->
     
     <div data-options="region:'west',title:'菜单栏',split:true" style="width:200px;">
 		<div id="functions" class="easyui-accordion" style="width: 200px;">
