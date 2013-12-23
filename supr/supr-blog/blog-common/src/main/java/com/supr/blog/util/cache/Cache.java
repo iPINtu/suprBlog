@@ -19,14 +19,14 @@ public interface Cache {
 	 * @param value
 	 * @throws CacheException
 	 */
-	public void put(Object key,Object value) throws CacheException;
+	void add(String key,Object value) throws CacheException;
 	
 	/**
 	 * 删除缓存
 	 * @param key
 	 * @throws CacheException
 	 */
-	public void remove(Object key) throws CacheException;
+	void delete(String key) throws CacheException;
 	
 	/**
 	 * 更新缓存
@@ -34,7 +34,7 @@ public interface Cache {
 	 * @param value
 	 * @throws CacheException
 	 */
-	public void update(Object key,Object value) throws CacheException;
+	void update(String key,Object value) throws CacheException;
 	
 	/**
 	 * 根据key查找缓存
@@ -42,12 +42,32 @@ public interface Cache {
 	 * @return
 	 * @throws CacheException
 	 */
-	public Object get(Object key) throws CacheException;
+	Object get(String key) throws CacheException;
 	
 	/**
-	 * 清空所有缓存
+	 * 清空系统缓存
 	 * @throws CacheException
 	 */
-	public void clear() throws CacheException;
+	void flushAll() throws CacheException;
+	
+	/**
+	 * 清空模块级别缓存
+	 * @param modulAll
+	 * @throws CacheException
+	 */
+	void flushModulAll(String modulAll) throws CacheException;
+	
+	/**
+	 * 清空用户级别缓存
+	 * @param userKey
+	 * @throws CacheException
+	 */
+	void flushUserAll(String userKey) throws CacheException;
+	
+	/**
+	 * 清空用户指定模块级别缓存
+	 * @throws CacheException
+	 */
+	void flushUserModulAll(String userKey,Object modulKey) throws CacheException;
 	
 }

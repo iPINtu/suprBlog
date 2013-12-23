@@ -8,7 +8,7 @@ package com.supr.blog.util.exception;
  * ----------------------------------------------------------------------------
  * ============================================================================
  */
-public class CacheException extends Exception{
+public class CacheException extends RuntimeException{
 	
 	private static final long serialVersionUID = 2265456037054126529L;
 

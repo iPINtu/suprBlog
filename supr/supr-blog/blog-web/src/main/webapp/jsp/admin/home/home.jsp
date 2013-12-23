@@ -13,19 +13,19 @@
 <body class="easyui-layout">
 
 	<div data-options="region:'north',title:'North Title',split:true,collapsed:true" style="height:100px;"></div>
+	
+	<!-- 
     <div data-options="region:'south',title:'South Title',split:true,collapsed:true" style="height:100px;"></div>
-    
-    <!-- 
     <div data-options="region:'east',title:'East',split:true,collapsed:true" style="width:100px;"></div>
      -->
     
     <div data-options="region:'west',title:'菜单栏',split:true" style="width:200px;">
 		<div id="functions" class="easyui-accordion" style="width: 200px;">
-			<div title="系统管理" data-options="iconCls:'icon-save',selected:true" style="padding: 10px;">
+			<div title="系统管理" data-options="iconCls:'icon-save',selected:true" style="overflow:auto;padding: 10px;">
 				<h3 style="color: #0099FF;">Accordion for jQuery</h3>
 				<p>Content1</p>
 			</div>
-			<div title="日志管理" data-options="iconCls:'icon-reload',selected:true" style="padding: 10px;">
+			<div title="日志管理" data-options="iconCls:'icon-reload',selected:true" style="overflow:auto;padding: 10px;">
 				<h3 style="color: #0099FF;">Accordion for jQuery</h3>
 				<p>Content2</p>
 			</div>
