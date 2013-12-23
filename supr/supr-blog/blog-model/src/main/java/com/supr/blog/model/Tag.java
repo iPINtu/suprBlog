@@ -14,7 +14,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tag")
+@Table(name = "tag",schema="suprblog")
 public class Tag implements java.io.Serializable {
 
 	private Long id;

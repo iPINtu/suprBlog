@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "article")
+@Table(name = "article",schema="suprblog")
 public class Article implements java.io.Serializable {
 
 	private Long id;

@@ -16,7 +16,7 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "admin",uniqueConstraints = @UniqueConstraint(columnNames = "username"))
+@Table(name = "admin",schema="suprblog",uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class Admin implements java.io.Serializable {
 
 	private Long id;

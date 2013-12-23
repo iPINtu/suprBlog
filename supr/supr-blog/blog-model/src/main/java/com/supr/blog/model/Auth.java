@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "auth")
+@Table(name = "auth",schema="suprblog")
 public class Auth implements java.io.Serializable {
 
 	private Long id;

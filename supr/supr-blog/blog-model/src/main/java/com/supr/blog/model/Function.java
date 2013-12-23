@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "function")
+@Table(name = "function",schema="suprblog")
 public class Function implements java.io.Serializable {
 
 	private Long id;

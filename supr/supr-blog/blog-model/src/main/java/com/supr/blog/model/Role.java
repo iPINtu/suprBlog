@@ -14,7 +14,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "role")
+@Table(name = "role",schema="suprblog")
 public class Role implements java.io.Serializable {
 
 	private Long id;

@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "category")
+@Table(name = "category",schema="suprblog")
 public class Category implements java.io.Serializable {
 
 	private Long id;
