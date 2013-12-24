@@ -95,13 +95,11 @@ public interface Cache {
 	
 	/**
 	 * 清空系统缓存
-	 * @throws CacheException
 	 */
 	void flushAll();
 	
 	/**
 	 * 清空块缓存
-	 * @throws CacheException
 	 */
 	void flushRegion();
 	
@@ -124,20 +122,17 @@ public interface Cache {
 	/**
 	 * 清空模块级别缓存
 	 * @param modulAll
-	 * @throws CacheException
 	 */
 	void flushModulAll(String modulAll);
 	
 	/**
 	 * 清空用户级别缓存
 	 * @param userKey
-	 * @throws CacheException
 	 */
 	void flushUserAll(String userKey);
 	
 	/**
 	 * 清空用户指定模块级别缓存
-	 * @throws CacheException
 	 */
 	void flushUserModulAll(String userKey,String modulKey);
 	
