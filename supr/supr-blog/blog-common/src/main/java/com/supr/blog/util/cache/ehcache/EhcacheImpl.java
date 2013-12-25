@@ -53,13 +53,7 @@ public class EhcacheImpl implements CacheI,InitializingBean {
 	
 	@Override
 	public void add(String key, Object value) {
-		Ehcache cache = getCache(DEFAULT_REGION);
-		Element element = new Element(key, value);
-		try {
-			cache.put(element);
-		} catch (Exception e){
-			throw new CacheException("添加缓存失败...", e.getCause());
-		}
+		add(DEFAULT_REGION,key,value);
 	}
 	
 	@Override
@@ -75,12 +69,7 @@ public class EhcacheImpl implements CacheI,InitializingBean {
 
 	@Override
 	public void delete(String key) {
-		Ehcache cache = getCache(DEFAULT_REGION);
-		try {
-			cache.remove(key);
-		} catch (Exception e) {
-			throw new CacheException("删除缓存失败...", e.getCause());
-		}
+		delete(DEFAULT_REGION,key);
 	}
 
 	@Override
@@ -95,20 +84,7 @@ public class EhcacheImpl implements CacheI,InitializingBean {
 
 	@Override
 	public Boolean update(String key, Object value) {
-		boolean result = false;
-		Ehcache cache = getCache(DEFAULT_REGION);
-		Element element = new Element(key, value);
-		Element oldElement = cache.get(key);
-		if(null == oldElement){
-			return result;
-		}
-		
-		try {
-			result = cache.replace(oldElement,element);
-		} catch (Exception e) {
-			throw new CacheException("更新缓存失败...", e.getCause());
-		}
-		return result;
+		return update(DEFAULT_REGION,key,value);
 	}
 
 	@Override
@@ -131,15 +107,7 @@ public class EhcacheImpl implements CacheI,InitializingBean {
 
 	@Override
 	public Object get(String key) {
-		Object result = null;
-		Ehcache cache = getCache(DEFAULT_REGION);
-		try {
-			result = cache.get(key);
-		} catch (Exception e) {
-			throw new CacheException("获取缓存失败...", e.getCause());
-		}
-		
-		return result;
+		return get(DEFAULT_REGION,key);
 	}
 
 	@Override
@@ -157,20 +125,7 @@ public class EhcacheImpl implements CacheI,InitializingBean {
 
 	@Override
 	public Boolean saveOrUpdate(String key, Object value) {
-		boolean result = true;
-		Ehcache cache = getCache(DEFAULT_REGION);
-		try {
-			Object obj = cache.get(key);
-			if(null == obj){
-				add(key, value);
-			}else{
-				result = update(key, value);
-			}
-		} catch (Exception e) {
-			throw new CacheException("保存或更新缓存失败...", e.getCause());
-		}
-		
-		return result;
+		return saveOrUpdate(DEFAULT_REGION, key,value);
 	}
 
 	@Override
