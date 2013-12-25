@@ -1,11 +1,13 @@
 package com.supr.blog.util.cache.memcache;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import net.spy.memcached.MemcachedClient;
 
 import com.supr.blog.util.cache.Cache;
 
+@Component("memcache")
 public class MemcacheImpl implements Cache {
 
 	@Autowired

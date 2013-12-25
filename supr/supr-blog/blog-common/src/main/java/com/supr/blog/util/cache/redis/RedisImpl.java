@@ -1,7 +1,10 @@
 package com.supr.blog.util.cache.redis;
 
+import org.springframework.stereotype.Component;
+
 import com.supr.blog.util.cache.Cache;
 
+@Component("redis")
 public class RedisImpl implements Cache {
 
 	@Override
