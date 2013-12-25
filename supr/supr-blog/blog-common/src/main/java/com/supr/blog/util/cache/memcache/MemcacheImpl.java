@@ -84,26 +84,36 @@ public class MemcacheImpl implements CacheI {
 
 	@Override
 	public Boolean saveOrUpdate(String key, Object value) {
-		// TODO Auto-generated method stub
-		return null;
+		boolean result = true;
+		Object obj = get(key);
+		if(null == obj){
+			add(key, value);
+		}else{
+			result = update(key, value);
+		}
+		
+		return result;
 	}
 
 	@Override
+	@Deprecated
 	public Boolean saveOrUpdate(String region, String key, Object value) {
-		// TODO Auto-generated method stub
-		return null;
+		return saveOrUpdate(key, value);
 	}
 
 	@Override
 	public void flushAll() {
-		// TODO Auto-generated method stub
-
+		try {
+			memcacheClient.flush();
+		} catch (Exception e) {
+			throw new CacheException("刷新缓存失败...", e.getCause());
+		}
 	}
 
 	@Override
+	@Deprecated
 	public void flushRegion(String region) {
-		// TODO Auto-generated method stub
-
+		flushAll();
 	}
 
 }
