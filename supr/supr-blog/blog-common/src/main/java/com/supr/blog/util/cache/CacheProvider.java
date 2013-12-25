@@ -1,6 +1,5 @@
 package com.supr.blog.util.cache;
 
-import com.supr.blog.util.exception.CacheException;
 
 /**
  * 缓存接口 - 缓存处理类提供接口
@@ -12,6 +11,6 @@ import com.supr.blog.util.exception.CacheException;
  */
 public interface CacheProvider {
 	
-	public Cache buildCache(String regionName,boolean autoCreate) throws CacheException;
+	public Cache buildCache(String regionName,boolean autoCreate);
 	
 }
