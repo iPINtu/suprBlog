@@ -6,17 +6,21 @@ import org.springframework.stereotype.Component;
 import net.spy.memcached.MemcachedClient;
 
 import com.supr.blog.util.cache.CacheI;
+import com.supr.blog.util.exception.CacheException;
 
 @Component("memcache")
 public class MemcacheImpl implements CacheI {
 
 	@Autowired
 	private MemcachedClient memcacheClient;
-	
+
 	@Override
 	public void add(String key, Object value) {
-		// TODO Auto-generated method stub
-
+		try {
+			memcacheClient.add(key, 1000, value);
+		} catch (Exception e) {
+			throw new CacheException("添加缓存失败...", e.getCause());
+		}
 	}
 
 	@Override
