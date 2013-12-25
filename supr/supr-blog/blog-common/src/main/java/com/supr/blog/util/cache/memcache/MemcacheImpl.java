@@ -24,21 +24,24 @@ public class MemcacheImpl implements CacheI {
 	}
 
 	@Override
+	@Deprecated
 	public void add(String region, String key, Object value) {
-		// TODO Auto-generated method stub
-
+		add(key,value);
 	}
 
 	@Override
 	public void delete(String key) {
-		// TODO Auto-generated method stub
-
+		try {
+			memcacheClient.delete(key);
+		} catch (Exception e) {
+			throw new CacheException("删除缓存失败...", e.getCause());
+		}
 	}
 
 	@Override
+	@Deprecated
 	public void delete(String region, String key) {
-		// TODO Auto-generated method stub
-
+		delete(key);
 	}
 
 	@Override
