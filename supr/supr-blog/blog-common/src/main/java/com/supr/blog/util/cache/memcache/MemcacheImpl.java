@@ -60,20 +60,26 @@ public class MemcacheImpl implements CacheI {
 	}
 
 	@Override
+	@Deprecated
 	public Boolean update(String region, String key, Object value) {
 		return update(key,value);
 	}
 
 	@Override
 	public Object get(String key) {
-		// TODO Auto-generated method stub
-		return null;
+		Object result = null;
+		try {
+			result = memcacheClient.get(key);
+		} catch (Exception e) {
+			throw new CacheException("获取缓存失败...", e.getCause());
+		}
+		return result;
 	}
 
 	@Override
+	@Deprecated
 	public Object get(String region, String key) {
-		// TODO Auto-generated method stub
-		return null;
+		return get(key);
 	}
 
 	@Override
