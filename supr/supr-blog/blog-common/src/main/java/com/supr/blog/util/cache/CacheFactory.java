@@ -18,7 +18,7 @@ public class CacheFactory {
 	private static CacheFactory cacheFactory ;
 	
 	/** 缓存接口 **/
-	private Cache cache;
+	private CacheI cache;
 	
 	private CacheFactory(){
 		// 缓存实现类型   配置文件读取
@@ -49,11 +49,11 @@ public class CacheFactory {
 		return cacheFactory;
 	}
 
-	public Cache getCache() {
+	public CacheI getCache() {
 		return cache;
 	}
 
-	public void setCache(Cache cache) {
+	public void setCache(CacheI cache) {
 		this.cache = cache;
 	}
 }

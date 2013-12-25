@@ -2,10 +2,10 @@ package com.supr.blog.util.cache.redis;
 
 import org.springframework.stereotype.Component;
 
-import com.supr.blog.util.cache.Cache;
+import com.supr.blog.util.cache.CacheI;
 
 @Component("redis")
-public class RedisImpl implements Cache {
+public class RedisImpl implements CacheI {
 
 	@Override
 	public void add(String key, Object value) {
@@ -77,36 +77,6 @@ public class RedisImpl implements Cache {
 	public void flushRegion(String region) {
 		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public void flushModulCache(String modulKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void flushUserCache(String userKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void flushUserModulCache(String userKey, String modulKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public Long incrementAndGet(String region, Object key) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Long incrementAndGet(Object key) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

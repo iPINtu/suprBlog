@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 import net.spy.memcached.MemcachedClient;
 
-import com.supr.blog.util.cache.Cache;
+import com.supr.blog.util.cache.CacheI;
 
 @Component("memcache")
-public class MemcacheImpl implements Cache {
+public class MemcacheImpl implements CacheI {
 
 	@Autowired
 	private MemcachedClient memcacheClient;
@@ -83,36 +83,6 @@ public class MemcacheImpl implements Cache {
 	public void flushRegion(String region) {
 		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public void flushModulCache(String modulKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void flushUserCache(String userKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void flushUserModulCache(String userKey, String modulKey) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public Long incrementAndGet(String region, Object key) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Long incrementAndGet(Object key) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

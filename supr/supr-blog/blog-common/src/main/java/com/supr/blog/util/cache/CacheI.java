@@ -11,7 +11,7 @@ import com.supr.blog.util.exception.CacheException;
  * ----------------------------------------------------------------------------
  * ============================================================================
  */
-public interface Cache {
+public interface CacheI {
 	
 	/**
 	 * 新增缓存
@@ -102,38 +102,5 @@ public interface Cache {
 	 * 清空块缓存
 	 */
 	void flushRegion(String region);
-	
-	/**
-	 * 清空模块级别缓存
-	 * @param modulKey
-	 */
-	void flushModulCache(String modulKey);
-	
-	/**
-	 * 清空用户级别缓存
-	 * @param userKey
-	 */
-	void flushUserCache(String userKey);
-	
-	/**
-	 * 清空用户指定模块级别缓存
-	 */
-	void flushUserModulCache(String userKey,String modulKey);
-	
-	/**
-	 * 缓存版本号递增
-	 * @param region
-	 * @param key
-	 * @return
-	 */
-	public Long incrementAndGet(String region, Object key);
-
-	/**
-	 * 缓存版本号递增
-	 * @param region
-	 * @param key
-	 * @return
-	 */
-    public Long incrementAndGet(Object key);
 	
 }
