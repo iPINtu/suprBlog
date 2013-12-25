@@ -1,2 +1,20 @@
-suprBlog
+suprBlog:练练手
+========
+spring3 + springMVC + Hibernate4
+========
+shiro    
+========
+lucene  
+========
+easyui  
+========
+memcache
+========
+ehcache 
+========
+redis   
+========
+mongodb 
+========
+quartz   
 ========
