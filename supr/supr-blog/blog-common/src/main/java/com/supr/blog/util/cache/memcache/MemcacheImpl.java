@@ -1,12 +1,14 @@
 package com.supr.blog.util.cache.memcache;
 
+import net.spy.memcached.MemcachedClient;
+import net.spy.memcached.internal.OperationFuture;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import net.spy.memcached.MemcachedClient;
-
 import com.supr.blog.util.cache.CacheI;
 import com.supr.blog.util.exception.CacheException;
+
 
 @Component("memcache")
 public class MemcacheImpl implements CacheI {
@@ -46,14 +48,20 @@ public class MemcacheImpl implements CacheI {
 
 	@Override
 	public Boolean update(String key, Object value) {
-		// TODO Auto-generated method stub
-		return null;
+		boolean result = false;
+		try {
+			OperationFuture<Boolean> future = memcacheClient.replace(key, 100, value);
+			result = future.get();
+		} catch (Exception e) {
+			throw new CacheException("更新缓存失败...", e.getCause());
+		}
+		
+		return result;
 	}
 
 	@Override
 	public Boolean update(String region, String key, Object value) {
-		// TODO Auto-generated method stub
-		return null;
+		return update(key,value);
 	}
 
 	@Override
