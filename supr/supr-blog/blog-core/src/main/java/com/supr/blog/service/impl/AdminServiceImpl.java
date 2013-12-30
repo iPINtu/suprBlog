@@ -3,7 +3,7 @@ package com.supr.blog.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.supr.blog.dao.AdminDao;
+import com.supr.blog.dao.hibernate.AdminDao;
 import com.supr.blog.model.Admin;
 import com.supr.blog.service.AdminService;
 

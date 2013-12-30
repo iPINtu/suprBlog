@@ -1,5 +1,7 @@
 package com.supr.blog.util.cache.redis;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import com.supr.blog.util.cache.CacheI;
