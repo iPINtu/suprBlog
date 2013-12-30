@@ -6,7 +6,10 @@ import com.supr.blog.util.cache.CacheI;
 
 @Component("redis")
 public class RedisImpl implements CacheI {
-
+	
+	@Autowired
+    private RedisTemplate<String, String> template;
+	
 	@Override
 	public void add(String key, Object value) {
 		// TODO Auto-generated method stub
