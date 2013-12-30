@@ -1,4 +1,4 @@
-package com.supr.blog.dao;
+package com.supr.blog.dao.hibernate;
 
 import java.io.Serializable;
 
