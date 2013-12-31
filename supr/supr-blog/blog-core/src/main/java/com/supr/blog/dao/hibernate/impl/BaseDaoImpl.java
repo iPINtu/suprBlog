@@ -9,7 +9,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 
-import com.supr.blog.dao.BaseDao;
+import com.supr.blog.dao.hibernate.BaseDao;
 
 public class BaseDaoImpl<T,PK extends Serializable> implements BaseDao<T, PK> {
 	
