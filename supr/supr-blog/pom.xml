@@ -39,6 +39,12 @@
 				<enabled>true</enabled>
 			</releases>
 		</repository>
+		
+		<repository>  
+	        <id>atlassian</id>  
+	        <name>atlassian</name>  
+	        <url>http://maven.jahia.org/maven2/</url>
+	    </repository>
 
 		<repository>
 			<id>Alibaba</id>
