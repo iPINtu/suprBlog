@@ -355,6 +355,22 @@
 				</includes>
 				<filtering>true</filtering>
 			</resource>
+			<resource>
+				<directory>src/main/resources/ibatis</directory>
+				<includes>
+					<include>*.xml</include>
+				</includes>
+				<filtering>true</filtering>
+				<targetPath>ibatis</targetPath>
+			</resource>
+			<resource>
+				<directory>src/main/resources/spring</directory>
+				<includes>
+					<include>*.xml</include>
+				</includes>
+				<filtering>true</filtering>
+				<targetPath>spring</targetPath>
+			</resource>
 		</resources>
 
 	</build>

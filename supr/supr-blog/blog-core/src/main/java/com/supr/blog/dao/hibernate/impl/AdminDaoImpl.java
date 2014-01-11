@@ -3,7 +3,7 @@ package com.supr.blog.dao.hibernate.impl;
 import org.springframework.stereotype.Repository;
 
 import com.supr.blog.dao.hibernate.AdminDao;
-import com.supr.blog.model.Admin;
+import com.supr.blog.hibernate.model.Admin;
 
 @Repository
 public class AdminDaoImpl extends BaseDaoImpl<Admin, String> implements AdminDao {

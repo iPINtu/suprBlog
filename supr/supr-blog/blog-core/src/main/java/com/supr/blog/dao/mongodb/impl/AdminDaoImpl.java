@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
 import com.supr.blog.dao.mongodb.AdminDao;
-import com.supr.blog.model.Admin;
+import com.supr.blog.hibernate.model.Admin;
 
 @Repository
 public class AdminDaoImpl extends BaseDaoImpl implements AdminDao {

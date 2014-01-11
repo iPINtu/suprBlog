@@ -1,6 +1,6 @@
 package com.supr.blog.service;
 
-import com.supr.blog.model.Admin;
+import com.supr.blog.hibernate.model.Admin;
 
 public interface AdminService {
 	
