@@ -9,6 +9,7 @@ import com.supr.blog.controller.BaseController;
 import com.supr.blog.model.vo.JsonResult;
 
 @Controller
+@RequestMapping("/user")
 public class AdminController extends BaseController{
 
 	private static final Logger logger = Logger.getLogger(AdminController.class);
