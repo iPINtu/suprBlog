@@ -7,7 +7,11 @@
 	<!-- Spring配置文件位置 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring-resource.xml,classpath:spring-druid.xml,classpath:spring-ehcache.xml</param-value>
+		<param-value>
+			classpath:spring-resource.xml
+			classpath:spring-druid.xml
+			classpath:spring-ehcache.xml
+		</param-value>
 	</context-param>
 
 	<!-- 配置字符集过滤器 -->
