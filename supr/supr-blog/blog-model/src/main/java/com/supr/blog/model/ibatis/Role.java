@@ -1,4 +1,4 @@
-package com.supr.blog.ibatis.model;
+package com.supr.blog.model.ibatis;
 
 
 public class Role implements java.io.Serializable {

@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.supr.blog.dao.hibernate.AdminDao;
-import com.supr.blog.hibernate.model.Admin;
+import com.supr.blog.model.hibernate.Admin;
 import com.supr.blog.service.AdminService;
 
 @Service

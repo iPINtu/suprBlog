@@ -1,6 +1,6 @@
 package com.supr.blog.dao.hibernate;
 
-import com.supr.blog.hibernate.model.Admin;
+import com.supr.blog.model.hibernate.Admin;
 
 public interface AdminDao {
 	

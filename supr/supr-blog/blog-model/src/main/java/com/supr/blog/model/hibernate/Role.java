@@ -1,4 +1,4 @@
-package com.supr.blog.hibernate.model;
+package com.supr.blog.model.hibernate;
 
 import java.util.HashSet;
 import java.util.Set;

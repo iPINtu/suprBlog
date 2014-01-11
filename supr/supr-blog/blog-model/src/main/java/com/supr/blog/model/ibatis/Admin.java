@@ -1,4 +1,4 @@
-package com.supr.blog.ibatis.model;
+package com.supr.blog.model.ibatis;
 
 import java.sql.Timestamp;
 import java.util.Set;

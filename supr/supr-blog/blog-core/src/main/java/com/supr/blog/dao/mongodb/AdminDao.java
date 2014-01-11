@@ -1,6 +1,6 @@
 package com.supr.blog.dao.mongodb;
 
-import com.supr.blog.hibernate.model.Admin;
+import com.supr.blog.model.hibernate.Admin;
 
 public interface AdminDao {
 	

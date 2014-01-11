@@ -1,4 +1,4 @@
-package com.supr.blog.ibatis.model;
+package com.supr.blog.model.ibatis;
 
 import java.util.HashSet;
 import java.util.Set;

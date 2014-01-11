@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-
+	
 	<!-- 引入属性文件 -->
 	<context:property-placeholder location="classpath:/jdbc.properties"/>
 
@@ -47,5 +47,7 @@
 	<aop:config>
 		<aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />
 	</aop:config>
-
+	
+	<!-- 根据配置文件选择持久层 -->
+	<import resource="spring-${dao}"/>
 </beans>

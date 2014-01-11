@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<properties>
+		<!-- 
+		<filepath>config/ErrorCode_en_US.properties</filepath>
+		-->
+		<filepath>config/ErrorCode_zh_CN.properties</filepath>	
+	</properties>
+	
+	<xml>
+		<!-- 
+		<filepath>config/dcc_Config.xml</filepath>
+		-->
+	</xml>
+	
+</config>
