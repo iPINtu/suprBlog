@@ -1,4 +1,4 @@
-package com.supr.blog.model;
+package com.supr.blog.hibernate.model;
 
 import java.sql.Timestamp;
 import java.util.HashSet;
