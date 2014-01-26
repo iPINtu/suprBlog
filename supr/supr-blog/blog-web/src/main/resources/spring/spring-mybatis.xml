@@ -9,18 +9,21 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:ibatis/config_mysql.xml" />
 	</bean>
-
+	
+	<!-- 
 	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg index="0" ref="sqlSessionFactory"/>
 		<constructor-arg index="1" value="BATCH" />
 	</bean>
-	
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-	  <property name="basePackage" value="com.supr.blog.dao.mybatis" />
-	</bean>
+	-->
 	
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-	  <property name="dataSource" ref="dataSource" />
+		<property name="dataSource" ref="dataSource" />
 	</bean>
+	
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    	<property name="basePackage" value="com.supr.blog.dao.mybatis" />
+    	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>  
+    </bean>
 
 </beans>

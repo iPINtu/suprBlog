@@ -8,7 +8,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>">
 	<meta charset="UTF-8">
-    
     <link rel="stylesheet" href="css/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
 	<link rel="stylesheet" href="css/assets/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
 	<link rel="stylesheet" href="css/assets/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -16,12 +15,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" href="css/assets/css/neon.css"  id="style-resource-5">
 	<link rel="stylesheet" href="css/assets/css/custom.css"  id="style-resource-6">
     
-    <script src="css/assets/js/jquery-1.10.2.min.js"></script>
 </head>
-
-<script language="javascript"> 
-
-</script>
 
 <body class="page-body login-page login-form-fall">
 
@@ -32,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="login-content">
 			
 			<a class="logo">
-				<img src="css/assets/images/logo.png" alt="" />
+				<img src="css/assets/images/logo.png"/>
 			</a>
 			
 			<p class="description">Dear user, log in to access the admin area!</p>
@@ -90,7 +84,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<input type="text" class="form-control" name="captcha" id="captcha" placeholder="验证码" autocomplete="off" />
 					
 						<div class="input-group-addon">
-							<img src="captcha"/>
+							<a href="javascript:captcha()">
+								<img id="generatorCaptcha" src="captcha"/>
+							</a>
 						</div>
 					</div>
 					
@@ -108,11 +104,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
 			<div class="login-bottom-links">
 				
-				<a href="#" class="link">Forgot your password?</a>
+				<!-- <a href="#" class="link">Forgot your password?</a> -->
 				
-				<br />
-				
-				<a href="#">ToS</a>  - <a href="#">Privacy Policy</a>
+				<a>Supr</a>  - <a>Privacy Policy</a>
 				
 			</div>
 			
@@ -121,8 +115,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div>
 	
 </div>
-
-
+	<script src="css/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="js/supr.js"></script>
 	<script src="css/assets/js/gsap/main-gsap.js" id="script-resource-1"></script>
 	<script src="css/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script>
 	<script src="css/assets/js/bootstrap.min.js" id="script-resource-3"></script>
@@ -133,21 +127,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script src="css/assets/js/neon-login.js" id="script-resource-8"></script>
 	<script src="css/assets/js/neon-custom.js" id="script-resource-9"></script>
 	<script src="css/assets/js/neon-demo.js" id="script-resource-10"></script>
-	<script type="text/javascript">
-		
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-28991003-3']);
-		_gaq.push(['_setDomainName', 'laborator.co']);
-		_gaq.push(['_setAllowLinker', true]);
-		_gaq.push(['_trackPageview']);
-		
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		
-	</script>
-	
 </body>
 </html>

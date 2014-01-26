@@ -10,7 +10,7 @@
 		<typeAlias alias="Role" type="com.supr.blog.model.ibatis.Role" />
 		<typeAlias alias="Auth" type="com.supr.blog.model.ibatis.Auth" />
 		<typeAlias alias="Function" type="com.supr.blog.model.ibatis.Function" />
-	</typeAliases>	
+	</typeAliases>
 	
 	<mappers>
 		<mapper resource="ibatis/admin.xml"/>

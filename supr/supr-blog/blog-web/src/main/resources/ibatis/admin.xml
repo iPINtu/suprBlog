@@ -3,9 +3,9 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
   
-<mapper namespace="admin">
+<mapper namespace="com.supr.blog.dao.mybatis.AdminMapper">
 	
-	<select id="isExistAdmin" resultType="Admin" parameterType="Map">
+	<select id="isExistAdmin" resultType="Admin" parameterType="Admin">
 		select USERNAME,PASSWORD from ADMIN where 1 = 1 
 		<if test="username != null">
 			and USERNAME=#{username}
