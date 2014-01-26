@@ -1,4 +1,4 @@
-package com.supr.blog.service;
+package com.supr.blog.service.hibernate;
 
 import com.supr.blog.model.hibernate.Admin;
 

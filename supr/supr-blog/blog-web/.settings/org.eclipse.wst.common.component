@@ -4,6 +4,15 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/lib" source-path="/target/blog-web/WEB-INF/lib"/>
+        <dependent-module archiveName="blog-core-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-core/blog-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="blog-model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-model/blog-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="blog-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blog-common/blog-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="/blog-web"/>
         <property name="java-output-path" value="/blog-web/src/main/webapp/WEB-INF/classes"/>
     </wb-module>

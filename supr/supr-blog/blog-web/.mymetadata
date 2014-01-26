@@ -3,7 +3,7 @@
   type="WEB"
   name="blog-web"
   id="myeclipse.1387631447584"
-  context-root="/blog-web"
+  context-root="/supr"
   j2ee-spec="6.0"
   archive="blog-web.war">
   <attributes>

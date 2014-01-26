@@ -1,4 +1,4 @@
-package com.supr.blog.service;
+package com.supr.blog.service.hibernate;
 
 import java.io.Serializable;
 

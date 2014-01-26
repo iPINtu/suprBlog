@@ -1,14 +1,14 @@
-package com.supr.blog.service.impl;
+package com.supr.blog.service.hibernate.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.supr.blog.dao.hibernate.AdminDao;
 import com.supr.blog.model.hibernate.Admin;
-import com.supr.blog.service.AdminService;
+import com.supr.blog.service.hibernate.AdminService;
 
 @Service
-public class AdminServiceImpl implements AdminService {
+public class AdminServiceImpl extends BaseServiceImpl<Admin, String> implements AdminService {
 
 	@Autowired
 	private AdminDao adminDao;

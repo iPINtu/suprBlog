@@ -41,7 +41,7 @@ public class CaptchaEngine extends ListImageCaptchaEngine{
 	private static final String CHAR_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZSZHZOZPZXZXZ";
 	
 	/** 背景图文件 */
-	private static final String BACKGROUND_IMAGE_PATH = "../com/supr/blog/util/jcaptcha/background/";
+	private static final String BACKGROUND_IMAGE_PATH = "/background/";
 	
 	/**
 	 * 随机颜色
@@ -61,7 +61,5 @@ public class CaptchaEngine extends ListImageCaptchaEngine{
 		TextPaster textPaster = new RandomTextPaster(MIN_WORD_LENGTH, MAX_WORD_LENGTH, new RandomListColorGenerator(COLORS));
 		addFactory(new GimpyFactory(new RandomWordGenerator(CHAR_STRING),new ComposedWordToImage(fontGenerator,backgroundGenerator,textPaster)));
 	}
-		
-	
 	
 }

@@ -6,7 +6,7 @@
                 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
                 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 	
-	<bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
+	<bean id="captchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService">
 		<property name="captchaEngineClass" value="com.supr.blog.util.jcaptcha.CaptchaEngine"/>	
 		<property name="minGuarantedStorageDelayInSeconds" value="3600"/>
 	</bean>
