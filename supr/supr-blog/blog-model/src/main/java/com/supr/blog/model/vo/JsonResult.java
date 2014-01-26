@@ -2,7 +2,6 @@ package com.supr.blog.model.vo;
 
 import com.supr.blog.util.config.CompositeFactory;
 
-
 /**
  * @功能：Json返回对象
  * @作者：ljt

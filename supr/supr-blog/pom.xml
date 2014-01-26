@@ -296,13 +296,19 @@
 			<artifactId>spring-data-redis</artifactId>
 			<version>1.1.0.RELEASE</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.4</version>
+		</dependency>
+				
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.2.1</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
@@ -338,13 +344,25 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>tomcat-maven-plugin</artifactId> 
-				<configuration> <url>http://localhost:8080/manager</url> <username>tomcat</username> 
-				<password>tomcat</password> <path>/supr</path> </configuration> </plugin> 
-				<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
-				<configuration> <skip>true</skip> </configuration> </plugin> -->
-		</plugins>
+		<!-- <plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<configuration>
+					<url>http://localhost:8080/manager</url>
+					<username>tomcat</username>
+					<password>tomcat</password>
+					<path>/supr</path>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins> -->
 
 		<resources>
 			<resource>

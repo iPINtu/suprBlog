@@ -6,16 +6,16 @@
 <configuration>
 
 	<typeAliases>
-		<typeAlias alias="Admin" type="com.supr.blog.ibatis.model.Admin" />
-		<typeAlias alias="Role" type="com.supr.blog.ibatis.model.Role" />
-		<typeAlias alias="Auth" type="com.supr.blog.ibatis.model.Auth" />
-		<typeAlias alias="Function" type="com.supr.blog.ibatis.model.Function" />
+		<typeAlias alias="Admin" type="com.supr.blog.model.ibatis.Admin" />
+		<typeAlias alias="Role" type="com.supr.blog.model.ibatis.Role" />
+		<typeAlias alias="Auth" type="com.supr.blog.model.ibatis.Auth" />
+		<typeAlias alias="Function" type="com.supr.blog.model.ibatis.Function" />
 	</typeAliases>	
 	
 	<mappers>
-		<mapper resource="config/ibatis/admin.xml"/>
-		<mapper resource="config/ibatis/role.xml"/>
-		<mapper resource="config/ibatis/auth.xml"/>
-		<mapper resource="config/ibatis/function.xml"/>
+		<mapper resource="ibatis/admin.xml"/>
+		<mapper resource="ibatis/role.xml"/>
+		<mapper resource="ibatis/auth.xml"/>
+		<mapper resource="ibatis/function.xml"/>
 	</mappers>
 </configuration>

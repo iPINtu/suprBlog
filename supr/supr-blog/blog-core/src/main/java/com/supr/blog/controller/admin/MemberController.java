@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.supr.blog.controller.BaseController;
 import com.supr.blog.model.vo.JsonResult;
 
 @Controller
 @RequestMapping("/member")
-public class MemberController extends BaseController{
+public class MemberController{
 	
 	@RequestMapping("/list")
 	public ModelAndView list(){

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import com.supr.blog.dao.hibernate.AdminDao;
 import com.supr.blog.model.hibernate.Admin;
 
-@Repository
+/*@Repository
 public class AdminDaoImpl extends BaseDaoImpl<Admin, String> implements AdminDao {
 
 	@Override
@@ -33,4 +33,4 @@ public class AdminDaoImpl extends BaseDaoImpl<Admin, String> implements AdminDao
 		return admin;
 	}
 
-}
+}*/

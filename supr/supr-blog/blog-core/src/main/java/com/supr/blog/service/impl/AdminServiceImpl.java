@@ -8,7 +8,7 @@ import com.supr.blog.model.hibernate.Admin;
 import com.supr.blog.service.AdminService;
 
 @Service
-public class AdminServiceImpl extends BaseServiceImpl<Admin, String> implements AdminService {
+public class AdminServiceImpl implements AdminService {
 
 	@Autowired
 	private AdminDao adminDao;

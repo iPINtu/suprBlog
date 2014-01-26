@@ -5,9 +5,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
 import com.supr.blog.dao.mongodb.AdminDao;
-import com.supr.blog.model.hibernate.Admin;
 
-@Repository
+/*@Repository
 public class AdminDaoImpl extends BaseDaoImpl implements AdminDao {
 
 	@Override
@@ -42,4 +41,4 @@ public class AdminDaoImpl extends BaseDaoImpl implements AdminDao {
 		return admin;
 	}
 
-}
+}*/

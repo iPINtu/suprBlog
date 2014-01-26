@@ -1,17 +1,7 @@
 package com.supr.blog.dao.hibernate.impl;
 
-import java.io.Serializable;
-import java.util.List;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
-
-import com.supr.blog.dao.hibernate.BaseDao;
-
-public class BaseDaoImpl<T,PK extends Serializable> implements BaseDao<T, PK> {
+/*public class BaseDaoImpl<T,PK extends Serializable> implements BaseDao<T, PK> {
 	
 	@Autowired
 	protected SessionFactory sessionFactory;
@@ -57,4 +47,4 @@ public class BaseDaoImpl<T,PK extends Serializable> implements BaseDao<T, PK> {
 		return createQuery(hql, values).uniqueResult();
 	}
 	
-}
+}*/

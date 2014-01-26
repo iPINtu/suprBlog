@@ -31,10 +31,9 @@
 		<property name="testWhileIdle" value="true" />
 		<property name="testOnBorrow" value="false" />
 		<property name="testOnReturn" value="false" />
-		<property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
 	</bean>
 
-	<!-- 配置druid监控spring jdbc -->
+	<!-- 
 	<bean id="druid-stat-interceptor" class="com.alibaba.druid.support.spring.stat.DruidStatInterceptor" />
 
 	<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
@@ -47,7 +46,8 @@
 	<aop:config>
 		<aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut" />
 	</aop:config>
+	-->
 	
 	<!-- 根据配置文件选择持久层 -->
-	<import resource="spring-${dao}"/>
+	<import resource="spring-mybatis.xml"/>
 </beans>
