@@ -1,17 +1,14 @@
 package com.supr.blog.service.mybatis.impl;
 
-import javax.annotation.Resource;
-
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.supr.blog.dao.mybatis.AdminMapper;
 import com.supr.blog.model.ibatis.Admin;
+import com.supr.blog.service.mybatis.AdminService;
 
 @Service
-public class AdminServiceImpl{
+public class AdminServiceImpl implements AdminService{
 	
 	@Autowired
 	private AdminMapper adminMapper;
@@ -21,8 +18,4 @@ public class AdminServiceImpl{
 		return admin;
 	}
 
-	public void loginOut() {
-
-	}
-	
 }

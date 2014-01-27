@@ -1,4 +1,4 @@
-package com.supr.blog.model.vo;
+package com.supr.blog.util.vo;
 
 import com.supr.blog.util.config.CompositeFactory;
 

@@ -47,9 +47,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="login-form">
 		
 		<div class="login-content">
-			
-			<form method="post" role="form" id="form_login">
-				
+		
+			<form id="form_login" method="post" role="form">
+		
 				<div class="form-group">
 					
 					<div class="input-group">
@@ -78,14 +78,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					
 					<div class="input-group">
 						<div class="input-group-addon">
-							<i class="entypo-user"></i>
+							<i class="entypo-signal"></i>
 						</div>
 						
 						<input type="text" class="form-control" name="captcha" id="captcha" placeholder="验证码" autocomplete="off" />
 					
 						<div class="input-group-addon">
 							<a href="javascript:captcha()">
-								<img id="generatorCaptcha" src="captcha"/>
+								<img style="height:21px" id="generatorCaptcha" src="captcha"/>
 							</a>
 						</div>
 					</div>
@@ -100,7 +100,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 				
 			</form>
-			
 			
 			<div class="login-bottom-links">
 				

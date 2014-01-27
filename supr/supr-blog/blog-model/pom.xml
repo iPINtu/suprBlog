@@ -14,10 +14,10 @@
 	</parent>
 	
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.supr</groupId>
 			<artifactId>blog-common</artifactId>
 			<version>${project.version}</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 </project>

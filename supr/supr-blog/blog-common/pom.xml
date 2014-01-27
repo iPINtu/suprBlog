@@ -12,4 +12,12 @@
 		<groupId>com.supr</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
+	<dependencies>
+		<dependency>
+			<artifactId>blog-core</artifactId>
+			<groupId>com.supr</groupId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 </project>

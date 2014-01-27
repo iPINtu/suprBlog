@@ -1,7 +1,6 @@
 package com.supr.blog.model.ibatis;
 
 import java.sql.Timestamp;
-import java.util.Set;
 
 public class Admin implements java.io.Serializable {
 
@@ -18,6 +17,12 @@ public class Admin implements java.io.Serializable {
 	private Timestamp modifyTime;
 
 	public Admin() {
+	}
+
+	public Admin(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
 	}
 
 	public Long getId() {
