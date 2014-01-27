@@ -1,4 +1,4 @@
-package com.supr.blog.util.config;
+package com.supr.blog.config;
 
 import java.util.HashSet;
 import java.util.Set;

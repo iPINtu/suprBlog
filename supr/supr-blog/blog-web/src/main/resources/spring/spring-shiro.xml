@@ -24,10 +24,10 @@
 		</property>
 	</bean>
 	
-	<bean id="authenticationFilter" class="com.supr.blog.util.shiro.AuthenticationFilter" />
+	<bean id="authenticationFilter" class="com.supr.blog.shiro.AuthenticationFilter" />
 	
 	<!-- 自定义认证授权 -->
-	<bean id="authRealm" class="com.supr.blog.util.shiro.AuthRealm" />
+	<bean id="authRealm" class="com.supr.blog.shiro.AuthRealm" />
 	
 	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
 		<property name="realm" ref="authRealm" />

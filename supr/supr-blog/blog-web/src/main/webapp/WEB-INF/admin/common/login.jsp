@@ -47,7 +47,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="login-form">
 		
 		<div class="login-content">
-		
 			<form id="form_login" method="post" role="form">
 		
 				<div class="form-group">
@@ -93,7 +92,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 				
 				<div class="form-group">
-					<button type="submit" class="btn btn-primary btn-block btn-login">
+					<button type="submit" class="btn btn-primary btn-block btn-login" onclick="login()">
 							登陆
 						<!-- <i class="entypo-login"></i> -->
 					</button>

@@ -1,4 +1,4 @@
-package com.supr.blog.util.shiro;
+package com.supr.blog.shiro;
 
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.AuthenticationException;

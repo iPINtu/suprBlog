@@ -1,4 +1,4 @@
-package com.supr.blog.util.config;
+package com.supr.blog.config;
 
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.apache.commons.configuration.Configuration;

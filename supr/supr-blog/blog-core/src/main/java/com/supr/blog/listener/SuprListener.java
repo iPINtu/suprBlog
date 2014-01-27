@@ -1,13 +1,13 @@
-package com.supr.blog.util.listener;
+package com.supr.blog.listener;
 
 import java.util.List;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import com.supr.blog.util.config.CompositeFactory;
-import com.supr.blog.util.config.PropertiesFactory;
-import com.supr.blog.util.config.XmlFactory;
+import com.supr.blog.config.CompositeFactory;
+import com.supr.blog.config.PropertiesFactory;
+import com.supr.blog.config.XmlFactory;
 
 /**
  * @功能：监听器

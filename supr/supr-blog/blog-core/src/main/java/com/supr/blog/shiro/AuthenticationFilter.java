@@ -1,4 +1,4 @@
-package com.supr.blog.util.shiro;
+package com.supr.blog.shiro;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -57,12 +57,6 @@ public class AuthenticationFilter extends FormAuthenticationFilter {
 		logger.info("onAccessDenied...");
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
-		String requestType = request.getHeader("X-Requested-With");
-		if (requestType != null && requestType.equalsIgnoreCase("XMLHttpRequest")) {
-			response.addHeader("loginStatus", "accessDenied");
-			response.sendError(HttpServletResponse.SC_FORBIDDEN);
-			return false;
-		}
 		return super.onAccessDenied(request, response);
 	}
 	

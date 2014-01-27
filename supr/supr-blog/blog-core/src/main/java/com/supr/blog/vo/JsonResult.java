@@ -1,6 +1,6 @@
-package com.supr.blog.util.vo;
+package com.supr.blog.vo;
 
-import com.supr.blog.util.config.CompositeFactory;
+import com.supr.blog.config.CompositeFactory;
 
 /**
  * @功能：Json返回对象

@@ -17,7 +17,7 @@
 	
 	<!-- 系统监听器 -->
 	<listener>
-		<listener-class>com.supr.blog.util.listener.SuprListener</listener-class>
+		<listener-class>com.supr.blog.listener.SuprListener</listener-class>
 	</listener>
 	
 	<!-- 开启spring功能 -->
